@@ -1,0 +1,141 @@
+[gd_scene load_steps=10 format=3 uid="uid://b6kdieotnai4f"]
+
+[ext_resource type="Texture2D" uid="uid://b4ruwh18xvr4n" path="res://HD-wallpaper-plain-black-black.jpg" id="1_fu7sn"]
+[ext_resource type="Script" uid="uid://t0bakoe4gp4i" path="res://main_menu.gd" id="1_jix8l"]
+[ext_resource type="FontFile" uid="uid://cp4vpv2s1as7n" path="res://upheavtt.ttf" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://c6gl4ynlbxv8f" path="res://EQUALIA LOGO.png" id="3_glbon"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlkkf"]
+texture = ExtResource("1_fu7sn")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fu7sn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.190762, 0.190762, 0.190762, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 346.0
+offset_top = -54.0
+offset_right = 346.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jix8l")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -377.0
+offset_top = 39.0
+offset_right = -345.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_nlkkf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = -150.0
+offset_right = 166.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+modulate = Color(0.262932, 0.262932, 0.262932, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "New Game"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+modulate = Color(0.262745, 0.262745, 0.262745, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Load Game"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+modulate = Color(0.262745, 0.262745, 0.262745, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Options"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+modulate = Color(0.262745, 0.262745, 0.262745, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Exit"
+
+[node name="EqualiaLogo" type="Sprite2D" parent="."]
+position = Vector2(-11, 376)
+scale = Vector2(0.604492, 0.604492)
+texture = ExtResource("3_glbon")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_loadgame_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_exit_pressed"]
