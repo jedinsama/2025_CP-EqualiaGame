@@ -21,14 +21,3 @@ The game combines exploration, combat, and problem-solving to make math fun and 
 - **ReportLab (Python)** – For generating PDF reports.  
 
 ---
-
-## 🚀 Getting Started
-
-### Prerequisites
-- [Godot Engine 4.x](https://godotengine.org/download)  
-- Git (optional but recommended)  
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Equalia.git
