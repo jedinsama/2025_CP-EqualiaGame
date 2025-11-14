@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw7q68s1mn6c7"]
+
+[ext_resource type="Script" uid="uid://bodvetnpqm5wp" path="res://scenes/combat.gd" id="1_4l26h"]
+[ext_resource type="Texture2D" uid="uid://dtts417recuok" path="res://assets/night_sprite_background_by_sonicmechaomega999_d9uiqmn.png" id="2_p71o4"]
+[ext_resource type="Texture2D" uid="uid://otinftpvjtlw" path="res://assets/sprites/AnimationSheet_Character.png" id="3_vcae8"]
+[ext_resource type="Texture2D" uid="uid://b3ryk2r1o5ax7" path="res://assets/sprites/slime_green.png" id="4_osi8t"]
+
+[node name="Combat" type="Node2D"]
+script = ExtResource("1_4l26h")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1181.0
+offset_bottom = 665.0
+texture = ExtResource("2_p71o4")
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+position = Vector2(248, 260)
+scale = Vector2(5.66667, 5.68182)
+texture = ExtResource("3_vcae8")
+region_enabled = true
+region_rect = Rect2(0, 0, 30.3145, 33.9876)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 72.0
+offset_top = 397.0
+offset_right = 1127.0
+offset_bottom = 573.0
+
+[node name="Fight" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 866.0
+offset_top = 19.0
+offset_right = 1011.0
+offset_bottom = 80.0
+text = "Attack"
+
+[node name="Run" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 866.0
+offset_top = 87.0
+offset_right = 1011.0
+offset_bottom = 148.0
+text = "Run"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 65.0
+offset_right = 612.0
+offset_bottom = 177.0
+text = "Enemy Slime Appeared"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="EnemySprite" type="Sprite2D" parent="."]
+position = Vector2(945, 262)
+scale = Vector2(7.05, 7.04545)
+texture = ExtResource("4_osi8t")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(73.49, 5.57041, 20.711, 22.6228)
+
+[node name="PlayerHP" type="Label" parent="."]
+offset_left = 235.0
+offset_top = 151.0
+offset_right = 275.0
+offset_bottom = 200.0
+text = "3/3
+"
+
+[node name="EnemyHP" type="Label" parent="."]
+offset_left = 926.0
+offset_top = 171.0
+offset_right = 966.0
+offset_bottom = 220.0
+text = "3/3
+"
+
+[node name="QuestionPanel" type="Panel" parent="."]
+offset_left = 405.0
+offset_top = 27.0
+offset_right = 752.0
+offset_bottom = 111.0
+
+[node name="QuestionLabel" type="Label" parent="QuestionPanel"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 23.0
+offset_right = 282.0
+offset_bottom = 66.0
+
+[node name="AnswerInput" type="LineEdit" parent="QuestionPanel"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 96.0
+offset_right = 289.0
+offset_bottom = 127.0
+
+[node name="SubmitButton" type="Button" parent="QuestionPanel"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 97.0
+offset_right = 336.0
+offset_bottom = 124.0
+text = "/"
