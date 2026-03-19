@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://v61s726b746y"]
+
+[ext_resource type="Script" uid="uid://cu1d6bb1hsx2r" path="res://puzzles/locked_door.gd" id="1_4fu38"]
+[ext_resource type="Texture2D" uid="uid://drdy7uw8cxitb" path="res://assets/sprites/tilesets/StoneGate.png" id="1_eg8le"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fu38"]
+size = Vector2(25, 51)
+
+[node name="LockedDoor" type="Node2D" unique_id=1834409347]
+script = ExtResource("1_4fu38")
+
+[node name="SolidDoor" type="StaticBody2D" parent="." unique_id=1812039574]
+
+[node name="Sprite2D" type="Sprite2D" parent="SolidDoor" unique_id=1733619908]
+position = Vector2(-13.75, 25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_eg8le")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SolidDoor" unique_id=767734772]
+position = Vector2(-13.5, 24.5)
+shape = SubResource("RectangleShape2D_4fu38")

@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bxwygy68w8vlt"]
+
+[ext_resource type="Script" uid="uid://bdgs7pydywnoj" path="res://puzzles/bridge_puzzle_ui.gd" id="1_35vpu"]
+[ext_resource type="FontFile" uid="uid://47n3ag6k1nyd" path="res://assets/fonts/PixelOperator8.ttf" id="1_v7fy0"]
+
+[node name="BridgePuzzleUI" type="CanvasLayer" unique_id=1436209089]
+process_mode = 3
+script = ExtResource("1_35vpu")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1134557702]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0, 0, 0, 0.22352941)
+
+[node name="MenuBoard" type="Panel" parent="." unique_id=604336108]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -309.0
+offset_top = -153.0
+offset_right = 309.0
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="." unique_id=180089509]
+offset_left = 307.0
+offset_top = 194.0
+offset_right = 833.0
+offset_bottom = 217.0
+theme_override_fonts/font = ExtResource("1_v7fy0")
+text = "Fix the Bridge! We need exactly one whole!"
+
+[node name="BridgeVisual" type="ProgressBar" parent="." unique_id=973514171]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.0
+offset_top = -21.0
+offset_right = 89.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 4.0
+step = 1.0
+show_percentage = false
+
+[node name="BtnClose" type="Button" parent="." unique_id=1954267843]
+offset_left = 853.0
+offset_top = 193.0
+offset_right = 875.0
+offset_bottom = 217.0
+theme_override_colors/font_color = Color(1, 0.038193963, 0.25860322, 1)
+text = "X"
+
+[node name="BtnHalf" type="Button" parent="." unique_id=1304060990]
+offset_left = 534.0
+offset_top = 397.0
+offset_right = 630.0
+offset_bottom = 437.0
+text = "Add 1/2
+Planks"
+
+[node name="BtnQuarter" type="Button" parent="." unique_id=354871097]
+offset_left = 346.0
+offset_top = 397.0
+offset_right = 471.0
+offset_bottom = 437.0
+text = "Add 1/4 
+Planks"
+
+[node name="BtnReset" type="Button" parent="." unique_id=1095123203]
+offset_left = 705.0
+offset_top = 396.0
+offset_right = 781.0
+offset_bottom = 439.0
+text = "Reset"

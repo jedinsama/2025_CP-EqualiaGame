@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b0xe0k3kplk6y"]
+
+[ext_resource type="Script" uid="uid://bwku06cvqyg43" path="res://puzzles/weight_scale.gd" id="1_1xw68"]
+[ext_resource type="Texture2D" uid="uid://qr1qalqxy3qw" path="res://assets/sprites/tilesets/scale.png" id="2_1xw68"]
+[ext_resource type="FontFile" uid="uid://47n3ag6k1nyd" path="res://assets/fonts/PixelOperator8.ttf" id="3_mknc2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atfgj"]
+size = Vector2(19, 14)
+
+[node name="FractionSign" type="Area2D" unique_id=1436170288]
+position = Vector2(3, 2)
+script = ExtResource("1_1xw68")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=297364029]
+position = Vector2(-2.7683468, -4.125001)
+scale = Vector2(0.13073395, 0.13073397)
+texture = ExtResource("2_1xw68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1964515086]
+position = Vector2(-2.5, -4)
+shape = SubResource("RectangleShape2D_atfgj")
+
+[node name="PromptLabel" type="Label" parent="." unique_id=1660304344]
+visible = false
+offset_left = -34.0
+offset_top = -43.0
+offset_right = 39.0
+offset_bottom = -24.0
+theme_override_fonts/font = ExtResource("3_mknc2")
+theme_override_font_sizes/font_size = 8
+text = "Interact to 
+Unlock Door"

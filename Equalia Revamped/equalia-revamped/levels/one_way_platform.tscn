@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cn8qbarssm4f6"]
+
+[ext_resource type="Texture2D" uid="uid://d24qo57axvisj" path="res://assets/sprites/tilesets/one_way_platform.png" id="1_mfkrb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onkx8"]
+size = Vector2(16, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mfkrb"]
+size = Vector2(16, 13)
+
+[node name="OneWayPlatform" type="StaticBody2D" unique_id=226884377]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=758808094]
+texture = ExtResource("1_mfkrb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=220218998]
+shape = SubResource("RectangleShape2D_onkx8")
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1745378869]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1458485933]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_mfkrb")

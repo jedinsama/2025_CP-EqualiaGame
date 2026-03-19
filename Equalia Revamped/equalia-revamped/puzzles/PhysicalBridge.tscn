@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://duvvk0fak3pqe"]
+
+[ext_resource type="Script" uid="uid://c4xbym8c73qd0" path="res://puzzles/physical_bridge.gd" id="1_85smq"]
+[ext_resource type="Texture2D" uid="uid://cp031bfs731yh" path="res://assets/sprites/tilesets/bridge_broken.png" id="1_ou4p0"]
+[ext_resource type="Texture2D" uid="uid://d0es1oelanhyi" path="res://assets/sprites/tilesets/bridge_fixed.png" id="2_85smq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ry5p"]
+size = Vector2(323, 39)
+
+[node name="PhysicalBridge" type="Node2D" unique_id=1800768102]
+script = ExtResource("1_85smq")
+
+[node name="BrokenSprite" type="Sprite2D" parent="." unique_id=1981936974]
+
+[node name="Sprite2D" type="Sprite2D" parent="BrokenSprite" unique_id=720356073]
+texture = ExtResource("1_ou4p0")
+
+[node name="SolidBridge" type="StaticBody2D" parent="." unique_id=507691052]
+
+[node name="Sprite2D" type="Sprite2D" parent="SolidBridge" unique_id=399025098]
+texture = ExtResource("2_85smq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SolidBridge" unique_id=1745474541]
+position = Vector2(-1.5, -1.5)
+shape = SubResource("RectangleShape2D_5ry5p")

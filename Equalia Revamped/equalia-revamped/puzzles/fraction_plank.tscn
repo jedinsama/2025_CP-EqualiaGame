@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b2g6qmexal3tx"]
+
+[ext_resource type="Script" uid="uid://d0ag654xlpds7" path="res://puzzles/fraction_plank.gd" id="1_xe563"]
+[ext_resource type="Texture2D" uid="uid://bhhn50c0jm1w5" path="res://assets/sprites/tilesets/plank.png" id="2_17b3l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygedn"]
+
+[node name="FractionPlank" type="Area2D" unique_id=904979547]
+script = ExtResource("1_xe563")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=967131155]
+texture = ExtResource("2_17b3l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1501061109]
+shape = SubResource("RectangleShape2D_ygedn")

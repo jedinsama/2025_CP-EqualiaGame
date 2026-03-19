@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://ty8scqcmo0af"]
+
+[ext_resource type="Script" uid="uid://ctefbgbtwtoje" path="res://ui/main_menu.gd" id="1_nmrkx"]
+[ext_resource type="Texture2D" uid="uid://b1755ujhykg33" path="res://assets/wallpaper/menubg.png" id="1_rn8js"]
+[ext_resource type="Texture2D" uid="uid://6hevj2go75dt" path="res://assets/logo/EQUALIA LOGO.png" id="2_nmrkx"]
+
+[node name="MainMenu" type="Control" unique_id=1931014439]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nmrkx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1329314043]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -108.5
+offset_top = -82.5
+offset_right = 108.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rn8js")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1372268784]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.25882354)
+
+[node name="EqualiaLogo" type="Sprite2D" parent="." unique_id=596252682]
+position = Vector2(570, 166.00002)
+scale = Vector2(0.703125, 0.703125)
+texture = ExtResource("2_nmrkx")
+
+[node name="BtnNewGame" type="Button" parent="." unique_id=487541046]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 187.0
+offset_top = 454.0
+offset_right = 378.0
+offset_bottom = 535.0
+text = "New Game"
+
+[node name="BtnLoadGame" type="Button" parent="." unique_id=1782924688]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 511.0
+offset_top = 454.0
+offset_right = 702.0
+offset_bottom = 535.0
+text = "Load Game"
+
+[node name="BtnQuit" type="Button" parent="." unique_id=2060228682]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 848.0
+offset_top = 454.0
+offset_right = 1039.0
+offset_bottom = 535.0
+text = "Quit
+"

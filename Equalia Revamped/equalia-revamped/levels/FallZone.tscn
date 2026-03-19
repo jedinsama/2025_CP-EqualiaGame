@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cenquair3cpwc"]
+
+[ext_resource type="Script" uid="uid://oun0ubll0plo" path="res://levels/fall_zone.gd" id="1_qyilb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opcns"]
+size = Vector2(814.5, 81)
+
+[node name="FallZone" type="Area2D" unique_id=728187979]
+script = ExtResource("1_qyilb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1769463777]
+position = Vector2(414.75, 86)
+shape = SubResource("RectangleShape2D_opcns")
